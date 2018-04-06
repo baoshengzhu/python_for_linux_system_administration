@@ -41,7 +41,7 @@ def insert_data(conn, sno, sname, sage):
 
 
 def main():
-    conn_args = dict(user='laimingxing', password='laimingxing', db='test')
+    conn_args = dict(user='laimingxing', passwd='laimingxing', db='test')
     with get_conn(**conn_args) as conn:
         with conn as cur:
             cur.execute("select * from student")
